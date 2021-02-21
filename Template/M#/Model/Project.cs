@@ -9,6 +9,7 @@ namespace App
             Name("MY.MICROSERVICE.NAME")
                 .SolutionFile("MY.MICROSERVICE.NAME.sln")
                 .IsMicroservice()
+                .ViewButtonsLocation("Top")
                 .NetCore();
 
             Layout("Default").Default().AjaxRedirect().VirtualPath("~/Views/Layouts/Default.cshtml");
