@@ -8,7 +8,7 @@ Get this source code via git clone (or getting the zip package which is not reco
 
 ### Prerequisites
 
-You'll need Visual Studio 2019 (Recommended last update) with .NET core 2.2+ installed.
+You'll need Visual Studio 2019 (Recommended last update) with .NET core 3.1+ installed.
 
 ## Running the app
 After cloning and getting ready the Visual Studio, you are ready to go! Just restore the packages and run.
