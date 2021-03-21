@@ -12,3 +12,6 @@ Template/Website/package-lock.json
 Template/Website/yarn.lock
 /Template/M#/lib/netcoreapp3.1/
 !/Template/M#/lib/netcoreapp3.1/MSharp.DSL.runtimeconfig.json
+Template/M#/UI/SchemaExtensions.cs
+*.map
+Template/Website/wwwroot/scripts/CustomModule1.js
