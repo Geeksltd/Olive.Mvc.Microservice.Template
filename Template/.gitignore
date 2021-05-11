@@ -174,3 +174,4 @@ M#/UI/SchemaExtensions.cs
 M#\Current\Stats.json
 M#/lib/
 Website/wwwroot/lib/
+!M#/lib/netcoreapp*/MSharp.DSL.runtimeconfig.json
