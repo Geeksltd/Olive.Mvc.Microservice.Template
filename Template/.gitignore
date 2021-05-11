@@ -125,7 +125,7 @@ TestResults/
 Website/Modules/
 Website/@Modules/
 Website/@TempImageFiles/
-Website/App_Code/TaskManager.cs
+Website/App_Start/TaskManager.cs
 Website/Pages/
 Website/vwd.webinfo
 Website/Web.SiteMap
