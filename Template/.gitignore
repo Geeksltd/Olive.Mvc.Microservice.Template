@@ -166,7 +166,7 @@ Website/Scripts/*.map
 Website/Scripts/Lib/MSharp/*.js 
 Website/Scripts/Lib/MSharp/*.js.map 
 !Website/Scripts/Lib/MSharp/jquery-validate.bootstrap-tooltip.js
-
+M#/UI/SchemaExtensions.cs
 
 /packages/
 .vs/
