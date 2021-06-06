@@ -21,8 +21,9 @@
 		<DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="FS.Shared.Website" Version="1.0.26" />
-		<PackageReference Include="Olive.Hangfire" Version="3.1.104" />
+		<PackageReference Include="FS.Shared.Website" Version="1.0.60" />
+		<PackageReference Include="Olive.Hangfire" Version="3.1.104" />		
+                <PackageReference Include="Olive.Mvc.Paging" Version="3.1.103" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Domain\Domain.csproj" />
