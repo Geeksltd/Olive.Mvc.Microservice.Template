@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    [EscapeGCop("Hardcode values are acceptable here")]
     public class ReferenceData : IReferenceData
     {
         static IDatabase Database => Context.Current.Database();
