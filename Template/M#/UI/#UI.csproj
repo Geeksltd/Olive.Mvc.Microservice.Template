@@ -6,9 +6,10 @@
     <OutputPath>..\lib\</OutputPath>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <NoWarn>1701;1702;1705;NU1701</NoWarn>
+	  <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="MSharp" Version="5.2.164" />
+	  <PackageReference Include="MSharp" Version="5.2.261" />
     <ProjectReference Include="..\..\Domain\Domain.csproj" />
   </ItemGroup>
   <Target Name="Generate code" AfterTargets="AfterBuild">
