@@ -6,6 +6,8 @@
 		<MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
 		<TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
 		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<AssemblyName>website</AssemblyName>
+		<TieredCompilation>true</TieredCompilation>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<NoWarn>1701;1702;1705;1998;NU1701</NoWarn>
@@ -20,10 +22,28 @@
 	<ItemGroup>
 		<DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
 	</ItemGroup>
+	
 	<ItemGroup>
-		<PackageReference Include="FS.Shared.Website" Version="1.0.60" />
-		<PackageReference Include="Olive.Hangfire" Version="3.1.104" />		
-                <PackageReference Include="Olive.Mvc.Paging" Version="3.1.103" />
+		<PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.1.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Amazon.Lambda.Serialization.Json" Version="2.0.0" />
+		<PackageReference Include="Amazon.Lambda.SQSEvents" Version="2.1.0" />
+		<PackageReference Include="FS.Shared.Website" Version="1.1.11.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+		<PackageReference Include="HangFire" Version="1.8.0-rc1" />
+		<PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="6.0.0" />
+		<PackageReference Include="Olive" Version="2.1.320" />
+		<PackageReference Include="Olive.Aws.EventBus" Version="2.1.148" />
+		<PackageReference Include="Olive.Entities.Data" Version="2.1.182" />
+		<PackageReference Include="Olive.Log.EventBus" Version="2.1.119" />
+		<PackageReference Include="Olive.Microservices.Hub.BoardComponent.Source" Version="2.2.127" />
+		<PackageReference Include="Olive.Mvc" Version="3.1.138" />
+		<PackageReference Include="Olive.Mvc.Microservices" Version="3.1.146" />
+		<PackageReference Include="Olive.Mvc.Paging" Version="3.1.103" />
+		<PackageReference Include="Amazon.Lambda.Serialization.Json" Version="2.0.0" />
+		<PackageReference Include="Amazon.Lambda.SQSEvents" Version="2.1.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\Domain\Domain.csproj" />
