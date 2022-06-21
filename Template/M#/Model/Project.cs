@@ -21,6 +21,10 @@ namespace App
             foreach (var role in "Dev,QA,BA,PM,AM,Director,Designer,IT,Reception,PA,Sales".Split(','))
                 foreach (var level in ",Junior,Senior,Lead,Head".Split(','))
                     Role(level + role);
+
+            AutoTask("Sample task")
+                   .Every(1, TimeUnit.Hour)
+                   .Run("//int i=0;");
         }
     }
 }
