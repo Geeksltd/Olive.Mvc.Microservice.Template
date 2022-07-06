@@ -7,17 +7,21 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>..\Website\bin\Debug\</OutputPath>
-    <NoWarn>1701;1702;1705;1998;NU1701;GCop546</NoWarn>
+    <NoWarn>1701;1702;1705;1998;NU1701</NoWarn>
     <DefineConstants>TRACE;DEBUG;NETCOREAPP2_1</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Olive.Microservices" Version="2.1.106" />
-    <PackageReference Include="Olive.ApiClient" Version="2.2.107" />
-    <PackageReference Include="Olive.Audit" Version="2.1.107" />
-    <PackageReference Include="Olive.Entities" Version="2.1.152" />
-    <PackageReference Include="Olive.Encryption" Version="2.2.106" />
-    <PackageReference Include="Olive.Entities.Data" Version="2.1.166" />
-    <PackageReference Include="Olive.Mvc" Version="3.1.121" />
-    <PackageReference Include="Olive.PassiveBackgroundTasks" Version="1.0.18" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2-beta1" />
+	  <PackageReference Include="Olive" Version="2.1.320" />
+	  <PackageReference Include="Olive.ApiClient" Version="2.2.108" />
+	  <PackageReference Include="Olive.CSV" Version="2.1.111" />
+	  <PackageReference Include="Olive.Drawing" Version="2.1.109" />
+	  <PackageReference Include="Olive.Entities" Version="2.1.175" />
+	  <PackageReference Include="Olive.Entities.Data" Version="2.1.182" />
+	  <PackageReference Include="Olive.Entities.Data.SqlServer" Version="2.1.118" />
+	  <PackageReference Include="Olive.Integration" Version="1.0.7" />
+	  <PackageReference Include="Olive.Microservices" Version="2.1.109" />
+	  <PackageReference Include="Olive.PassiveBackgroundTasks" Version="1.0.27" />
+	  <PackageReference Include="Olive.Web" Version="3.1.107" />
   </ItemGroup>
 </Project>

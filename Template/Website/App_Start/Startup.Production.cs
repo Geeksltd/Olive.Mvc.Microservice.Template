@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Olive;
+using Olive.Aws;
+using Olive.Mvc;
 using Olive.PassiveBackgroundTasks;
 using System.Threading.Tasks;
 
@@ -16,6 +18,16 @@ namespace Website
         {
 
         }
+
+        protected override void ConfigureRequestHandlers(IApplicationBuilder app)
+        {
+            app.IgnorePerformance("/olive-trigger-tasks");
+            app.IgnorePerformance("/api/legacy/all");
+
+            base.ConfigureRequestHandlers(app);
+        }
+
+        protected override SecretProviderType GetSecretsProvider() => SecretProviderType.SystemsManagerParameter;
     }
 }
 
