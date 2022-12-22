@@ -19,14 +19,6 @@
         /// <summary>Registers the scheduled activities.</summary>
         public override void Initialize()
         {
-            Register(new BackgroundJob("Clean old temp uploads", () => CleanOldTempUploads(), Hangfire.Cron.MinuteInterval(10)));
-        }
-        
-        /// <summary>Clean old temp uploads</summary>
-        public static async Task CleanOldTempUploads()
-        {
-            await Olive.Context.Current.GetService<Olive.Mvc.IFileRequestService>()
-                .DeleteTempFiles(olderThan: 1.Hours());
         }
     }
 }

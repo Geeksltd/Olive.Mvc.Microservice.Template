@@ -3,8 +3,12 @@
 // and may be overwritten at any time. Do not change it manually.
 // ********************************************************************
 
+using System;
+using Olive;
+
 namespace MSharp
 {
+    [EscapeGCop("Auto generated code.")]
     partial class AppRole
     {
         internal static ProjectRole Dev => ProjectRole.Of("Dev");
